@@ -69,8 +69,8 @@ def upstream(ups):
         origin = repo.create_remote('upstream', off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head('seden', origin.refs.seden)
-        repo.heads.rio.set_tracking_branch(origin.refs.seden)
+        repo.create_head('rio', origin.refs.rio)
+        repo.heads.rio.set_tracking_branch(origin.refs.rio)
         repo.heads.rio.checkout(True)
 
     ac_br = repo.active_branch.name
