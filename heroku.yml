@@ -1,0 +1,5 @@
+build: 
+  docker: 
+      rio: Dockerfile
+run:
+   rio: python3 rio.py
