@@ -16,8 +16,8 @@ from pyrogram.errors import (
     UserAdminInvalid,
 )
 from pyrogram.types import ChatPermissions, ChatPrivileges
-from sedenbot import BRAIN, HELP
-from sedenecem.core import (
+from riobot import BRAIN, HELP
+from rionify.core import (
     download_media_wc,
     edit,
     extract_args,
@@ -27,7 +27,7 @@ from sedenecem.core import (
     get_translation,
     is_admin,
     reply_doc,
-    sedenify,
+    riobot,
     send_log,
 )
 
