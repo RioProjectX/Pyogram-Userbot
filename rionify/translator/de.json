@@ -1,6 +1,6 @@
 {
     "added": "hinzugef\u00fcgt",
-    "aliveInfo": ".alive\nVerwendung: Geben sie .alive ein, um zu sehen, ob ihr Seden Bot funktioniert oder nicht.",
+    "aliveInfo": ".alive\nVerwendung: Geben sie .alive ein, um zu Rio, ob ihr Rio Bot funktioniert oder nicht.",
     "androidInfo": ".magisk\nHolen sie sich neueste Magisk Releases\n\n.device <codenamen>\nVerwendung: Holen sie sich informationen \u00fcber Android ger\u00e4t codename oder modell.\n\n.codename <brand> <ger\u00e4t>\nVerwendung: Suche nach Android ger\u00e4t codenamen.\n\n.specs <brand> <ger\u00e4t>\nVerwendung: Holen sie sich ger\u00e4t spezifikationen info.\n\n.twrp <codenamen>\nVerwendung: Holen sie sich neueste twrp download f\u00fcr Android ger\u00e4t.\n\n.orangefox <codenamen>\nVerwendung: Holen sie sich neueste OrangeFox download f\u00fcr Android ger\u00e4t.\n\n.phh <ABI>\nHolen sie sich neueste Phh Releases",
     "androidPhhHeader": "%1Neuesten Phh %2AOSP Versionen%1",
     "answerFromBot": "Ich habe keine antwort von bot bekommen!",
@@ -18,7 +18,7 @@
     "blacklistSqlLog": "Blacklist Modul kann nicht ausgef\u00fchrt werden, keine SQL-Verbindung gefunden",
     "blacklistText": "Gib mir einen text",
     "blankBlacklist": "Es gibt keine blacklist im aktuellen chat.",
-    "botverInfo": ".botver\nVerwendung: Zeigt Seden UserBot version an.",
+    "botverInfo": ".botver\nVerwendung: Zeigt Rio UserBot version an.",
     "callInfo": ".call #note oder .call $snip\nVerwendung: Verwendet, um notizen oder globale notizen",
     "cannotApproveMyself": "Sorry Mr. fancy Hose, Sie k\u00f6nnen sich nicht genehmigen.",
     "cannotBlockMyself": "Beruhigen sie anybob, Sie k\u00f6nnen sich nicht blockieren.",
