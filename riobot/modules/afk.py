@@ -8,8 +8,8 @@ from random import choice, randint
 from time import sleep
 
 from pyrogram import ContinuePropagation, StopPropagation
-from sedenbot import HELP, PM_AUTO_BAN, TEMP_SETTINGS, app
-from sedenecem.core import (
+from riobot import HELP, PM_AUTO_BAN, TEMP_SETTINGS, app
+from rionify.core import (
     edit,
     extract_args,
     get_translation,
