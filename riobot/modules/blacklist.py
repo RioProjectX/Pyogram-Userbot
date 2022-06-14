@@ -7,8 +7,8 @@
 from io import BytesIO
 from re import IGNORECASE, escape, search
 
-from sedenbot import HELP, LOGS
-from sedenecem.core import (
+from riobot import HELP, LOGS
+from rionify.core import (
     edit,
     extract_args,
     get_translation,
