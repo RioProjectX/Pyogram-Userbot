@@ -60,7 +60,7 @@ def bot_version(message):
             preview=False,
         )
     else:
-        edit(message, f'`{get_translation("sedenGitNotFound")}`')
+        edit(message, f'`{get_translation("rioGitNotFound")}`')
 
 
 @riobot(pattern='^.ping$')
@@ -97,7 +97,7 @@ def data_center(client, message):
     edit(
         message,
         get_translation(
-            'sedenNearestDC',
+            'rioNearestDC',
             ['**', '`', result.country, result.nearest_dc, result.this_dc],
         ),
     )
@@ -172,13 +172,13 @@ def eval(message):
                     return
                 edit(
                     message,
-                    get_translation('sedenQuery', ['**', '`', args, evaluation]),
+                    get_translation('rioQuery', ['**', '`', args, evaluation]),
                 )
         else:
             edit(
                 message,
                 get_translation(
-                    'sedenQuery', ['**', '`', args, get_translation('sedenErrorResult')]
+                    'rioQuery', ['**', '`', args, get_translation('sedenErrorResult')]
                 ),
             )
     except Exception as err:
