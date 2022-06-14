@@ -11,8 +11,8 @@ from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
 from requests import get
-from sedenbot import HELP
-from sedenecem.core import edit, extract_args, get_translation, sedenify, use_proxy
+from riobot import HELP
+from rionify.core import edit, extract_args, get_translation, riobot, use_proxy
 
 
 @riobot(pattern='^.magisk$')
