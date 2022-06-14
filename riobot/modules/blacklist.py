@@ -1,6 +1,6 @@
 # and licensed under GNU Affero General Public License v3.
 # See the GNU Affero General Public License for more details.
-#
+# @riogroupsupport
 # All rights reserved. See COPYING, AUTHORS.
 #
 
