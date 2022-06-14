@@ -14,7 +14,7 @@ from sedenecem.core import (
     extract_args,
     get_translation,
     reply,
-    sedenify,
+    riobot,
     send_log,
 )
 
