@@ -70,8 +70,8 @@ def upstream(ups):
         origin.fetch()
         force_update = True
         repo.create_head('seden', origin.refs.seden)
-        repo.heads.seden.set_tracking_branch(origin.refs.seden)
-        repo.heads.seden.checkout(True)
+        repo.heads.rio.set_tracking_branch(origin.refs.seden)
+        repo.heads.rio.checkout(True)
 
     ac_br = repo.active_branch.name
     if ac_br != 'seden':
