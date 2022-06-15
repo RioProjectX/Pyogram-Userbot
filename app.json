@@ -75,13 +75,10 @@
         }
     },
   "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
+        {
+            "plan": "heroku-postgresql"
+        }
+    ],
   "buildpacks": [
     {
      
@@ -91,12 +88,12 @@
         {
             "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
         }
-      
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    }
+        {
+             "url": "heroku/python"
+        },
+        {
+             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      }
   ],
   "formation": {
     "worker": {
