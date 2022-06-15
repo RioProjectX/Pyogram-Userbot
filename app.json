@@ -8,7 +8,7 @@
   "website": "https://rioprojectx.github.io/"
   "stack": "container",
   "env": {
-    "ALIVE_MSG": {
+        "ALIVE_MSG": {
             "description": "Custom message for .alive command. We have our own alive message by default.",
             "required": false,
             "value": "`Hello! I am alive \u2764\ufe0f`"
