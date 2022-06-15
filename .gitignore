@@ -2,8 +2,8 @@ config.env
 brains.check
 learning-data-root.check
 blacklist.check
-sedenbot.db
-sedenbot.session*
+riobot.db
+riobot.session*
 .DS_Store/
 __pycache__/
 downloads/
