@@ -1,23 +1,15 @@
 {
-    "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-    ],
-    "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
-        },
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
-        }
-    ],
-    "description": "A modular Telegram userbot running on Python 3.9 with an sqlalchemy database,",
-    "env": {
-        "ALIVE_MSG": {
+  "name": "Rio-Userbot",
+  "description": "[Rio-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
+  "keywords": ["telegram", "userbot", "man-userbot", "modular", "python"],
+  "repository": "https://github.com/RioProjectX/Pyogram-Userbot",
+  "stack": "container",
+  "env": {
+    "ALIVE_MSG": {
             "description": "Custom message for .alive command. We have our own alive message by default.",
             "required": false,
-            "value": "`Hello Rio! I am alive \u2764\ufe0f`"
+            "value": "`Hello! I am alive \u2764\ufe0f`"
         },
         "API_HASH": {
             "description": "Get this value from my.telegram.org.",
@@ -82,25 +74,34 @@
             "required": true
         }
     },
-    "formation": {
-        "seden": {
-            "quantity": 1,
-            "size": "free"
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+     
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
         }
+      
+      "url": "heroku/python"
     },
-    "keywords": [
-        "telegram",
-        "userbot",
-        "python",
-        "rio",
-        "module",
-        "pyrogram",
-        "postgresql"
-    ],
-    "logo": "https://i.imgur.com/GL1yJpN.png",
-    "name": "Telegram Riobot",
-    "repository": "https://github.com/TeamDerUntergang/Pyogram-Userbot",
-    "stack": "container",
-    "success_url": "https://telegram.dog/riogroupsupport",
-    "website": "https://rioprojectx.github.io/"
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
