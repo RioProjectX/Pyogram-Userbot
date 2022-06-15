@@ -4,6 +4,8 @@
   "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
   "keywords": ["telegram", "userbot", "python", "rio", "module", "pyogram", "postgresql"],
   "repository": "https://github.com/RioProjectX/Pyogram-Userbot",
+  "success_url": "https://telegram.dog/Riogroupsupport",
+  "website": "https://rioprojectx.github.io/"
   "stack": "container",
   "env": {
     "ALIVE_MSG": {
