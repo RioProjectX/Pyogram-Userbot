@@ -1,17 +1,29 @@
 {
-  "name": "Rio-Userbot",
-  "description": "[Rio-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
-  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
-  "keywords": ["telegram", "userbot", "python", "rio", "module", "pyogram", "postgresql"],
-  "repository": "https://github.com/RioProjectX/Pyogram-Userbot",
-  "success_url": "https://telegram.dog/Riogroupsupport",
-  "website": "https://rioprojectx.github.io/"
-  "stack": "container",
-  "env": {
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+        }
+    ],
+    "description": "A modular Telegram userbot running on Python 3.9 with an sqlalchemy database,",
+    "env": {
         "ALIVE_MSG": {
             "description": "Custom message for .alive command. We have our own alive message by default.",
             "required": false,
-            "value": "`Hello! I am alive \u2764\ufe0f`"
+            "value": "`Hello ! I am alive \u2764\ufe0f`"
         },
         "API_HASH": {
             "description": "Get this value from my.telegram.org.",
@@ -64,7 +76,7 @@
         "REPO_URL": {
             "description": "It helps your bot updates, if you maintain a fork repo you can add your repo URL here.",
             "required": true,
-            "value": "https://github.com/RioProjectX/Pyogram-Userbot"
+            "value": "https://github.com/TeamDerUntergang/Telegram-SedenUserBot"
         },
         "RIO_LANG": {
             "description": "It permanently changes your bot's lang. Default is English (en).",
@@ -76,31 +88,25 @@
             "required": true
         }
     },
-  "addons": [
-        {
-            "plan": "heroku-postgresql"
+    "formation": {
+        "seden": {
+            "quantity": 1,
+            "size": "free"
         }
+    },
+    "keywords": [
+        "telegram",
+        "userbot",
+        "python",
+        "seden",
+        "module",
+        "pyrogram",
+        "postgresql"
     ],
-  "buildpacks": [
-    {
-     
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
-        },
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
-        }
-        {
-             "url": "heroku/python"
-        },
-        {
-             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  }
+    "logo": "https://i.imgur.com/GL1yJpN.png",
+    "name": "Telegram Riobot",
+    "repository": "https://github.com/RioProjectX/Pyogram-Userbot",
+    "stack": "container",
+    "success_url": "https://telegram.dog/RioGroupSupport",
+    "website": "https://RioProjectX.github.io/"
 }
