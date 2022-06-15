@@ -7,4 +7,4 @@ WORKDIR /riouserbot/
 RUN git clone -b rio https://github.com/RioProjectX/Pyogram-Userbot.git /riouserbot/
 
 # Run bot
-CMD ["python3", "rio.py"]
+CMD ["python3", "seden.py"]
