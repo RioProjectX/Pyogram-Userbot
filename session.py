@@ -20,7 +20,7 @@ Create a new application, by entering the required details\n''')
         API_HASH = input('API HASH: ')
 
     app = Client(
-        'sedenify',
+        'riobot',
         api_id=API_ID,
         api_hash=API_HASH)
 
