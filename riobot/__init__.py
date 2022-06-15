@@ -39,7 +39,7 @@ RIO_LANG = environ.get('RIO_LANG', 'en')
 
 
 def get_translation(transKey, params: list = None):
-    ret = _tr.get_translation(RIO_LANG, transKey)
+    ret = _tr.get_translation('RIO_LANG', transKey)
 
     if params and len(params) > 0:
         for i in reversed(range(len(params))):
